@@ -1,0 +1,18 @@
+#pages-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .page {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .page.home {
+        background: url(/assets/imgs/IMG_1660.JPG) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
