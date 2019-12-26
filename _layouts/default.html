@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    {% if jekyll.environment == "production" %}
+      {% include ga.html %}
+    {% endif %}
+  </head>
+  <body>
+    {% if jekyll.environment == "production" %}
+      {% include coming_soon.html %}
+    {% else %}
+      <nav>
+
+      </nav>
+      {{ content }}
+    {% endif %}
+  </body>
+</html>
